@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id csv:</strong>
+  <%= @order.id_csv %>
+</p>
+
+<p>
+  <strong>Merchant:</strong>
+  <%= @order.merchant_id %>
+</p>
+
+<p>
+  <strong>Shopper:</strong>
+  <%= @order.shopper_id %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @order.amount %>
+</p>
+
+<p>
+  <strong>Created:</strong>
+  <%= @order.created %>
+</p>
+
+<p>
+  <strong>Completed:</strong>
+  <%= @order.completed %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @order.status %>
+</p>
+
+<p>
+  <strong>Disburse:</strong>
+  <%= @order.disburse %>
+</p>
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>

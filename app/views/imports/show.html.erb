@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @import.status %>
+</p>
+
+<p>
+  <strong>Import type:</strong>
+  <%= @import.import_type %>
+</p>
+
+<p>
+  <strong>File:</strong>
+  <%= link_to @import.file.filename, @import.file if @import.file.attached? %>
+</p>
+
+<%= link_to 'Edit', edit_import_path(@import) %> |
+<%= link_to 'Back', imports_path %>
